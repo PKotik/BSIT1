@@ -50,9 +50,9 @@ void PrintProvidersHealth() {
 }
 
 DWORD WINAPI WscChangeCallback(LPVOID /*lpParameter*/) {
-    std::cout << std::endl << "*** WSC change detected! Re-querying status... ***" << std::endl;
+    std::cout << std::endl << "*** WSC change detected! ***" << std::endl;
     PrintProvidersHealth();
-    std::cout << "--------------------------------------" << std::endl;
+    std::cout << "#################################" << std::endl;
     return 0;
 }
 
